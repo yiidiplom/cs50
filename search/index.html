@@ -2,14 +2,45 @@
 <html lang="en">
     <head>
         <title>Search</title>
+		<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+		</style>
     </head>
     <body>
-        <a href="index.html">Пошук Google</a>
-        <a href="searchimg.html">Пошук зображень</a>
-        <a href="searchadvansed.html">Розширений пошук</a>
-        <form action="https://google.com/search">
+<div class="row"  style="height:200px;width: 240px; align-content: center;" >
+
+	<div class="column" style="">	
+	</div>	
+
+	<div class="column" style="align-content: center;">
+		<img src="google.png">
+	   <form action="https://google.com/search">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
+	</div>	
+	
+	<div class="column" style="align-content: right;">	
+        <a href="searchimg.html">Пошук зображень</a>
+        <a href="searchadvansed.html">Розширений пошук</a>
+ 	</div>
+</div>		
     </body>
 </html>
